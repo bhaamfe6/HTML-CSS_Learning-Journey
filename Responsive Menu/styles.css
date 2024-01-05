@@ -1,0 +1,32 @@
+h1, h2, p{
+  text-align: center;
+}
+
+/* The #menu with the hash# is a id selector and uses an id attribute. The .menu is a class selector and uses a class attribute*/
+
+/* All four padding properties have the same value.  So a single padding property can replace all four padding properties. */
+.menu{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 80%;
+  background-color: burlywood;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 500px;
+}
+
+.flavor{
+text-align: left;
+width: 75%;
+}
+
+.price{
+text-align: right;
+width: 25%;
+}
+
+.item p{
+display: inline-block;}
+
