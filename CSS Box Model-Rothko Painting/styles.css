@@ -1,86 +1,57 @@
-@charset 'UTF-8';
-
-html,
-html * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+.canvas{
+width: 500px;
+height: 600px;
+background-color: #4d0f00;
+overflow: hidden;
+filter: blur(2px);
 }
 
-body {
-  font-family: arial, sans-serif;
-  font-size: 1vw;
-  background: white;
-}
-header {
-  position: fixed;
-  padding: 2em;
-  z-index: 1000;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background:rgba(0,0,0,0.2);
-}
-nav {
-  z-index: 400;
-  top: 0;
-  left: 0;
-  opacity: .95;
-  background: #fff;
-  position: relative;
-  display: block !important;
-  float: right;
-  width: 30%;
-  padding: .75em 1em 0 0;
-  height: 1.5em;
-}
-.hero {
-  position: relative;
-  height: 54vw;
-  background-color: #a2f92f;
-}
-.intro {
-  position: relative;
-  color: #343144;
-  background: #fff;
-  height: 30vw;
-  padding: 9em 6em 5em;
+.frame{
+border: solid black 50px;
+width: 500px;
+padding: 50px;
+margin: 20px auto;
 }
 
-.artworks {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
+.one{
+width: 425px;
+height: 150px;
+background-color: #efb762;
+margin: 20px auto;
+box-shadow: 0 0 3px 3px #efb762;
+border-radius: 9px;
+transform: rotate(-0.6deg);
 }
 
-.artwork {
-  display: flex;
+/*the transform property is used to rotate the .one class 0.6 dgrees counterclockwise */
+
+.two{
+width: 475px;
+height: 200px;
+background-color: #8f0401;
+margin: 0 auto 20px;
+box-shadow: 0 0 3px 3px #8f0401;
+border-radius: 8px 10px;
+transform: rotate(0.4deg);
+}
+/* The margin shorthand of 0 auto 20px sets the margin top to 0 the horizontal margin to auto and the bottom margin to 20px*/
+
+/* The border-radius has a top-left and bottom-right radius of 8px and a top-right and bottom-left radius of 10px*/
+
+.one, .two{
+filter: blur(1px);
 }
 
-.artwork .artwork-piece {
-  padding: 8% 0 8% 23.5%;
-  background-image:-moz-linear-gradient( 135deg, rgb(160,55,220) 0%, rgb(83,200,234) 100%);
-  background-image: -webkit-linear-gradient( 135deg, rgb(160,55,220) 0%, rgb(83,200,234) 100%);
-  background-image: -ms-linear-gradient( 135deg, rgb(160,55,220) 0%, rgb(83,200,234) 100%);
-  width: 50%;
-}
-.artwork figure {
-  position: relative;
-  vertical-align: middle;
-  padding: 50% 10%;
-  background: #cef0f2;
-}
-.artwork .artwork-description {
-  background: #26223e;
-  width: 50%;
-  padding: 11.25em 10em 11.5em;
-}
+.three{
+width: 91%;
+height: 28%;
+background-color: #b20403;
+margin: auto;
+filter: blur(2px);
+box-shadow: 0 0 5px 5px #b20403;
+border-radius: 30px 25px 60px 12px;
+transform: rotate(-0.2deg);
+  }
 
-footer {
-  margin-top: -3em;
-  padding: 8.75em 0 2em;
-  height: 10vw;
-  background-image:-moz-linear-gradient( -45deg, rgb(255,91,127) 0%, rgb(255,213,86) 100%);
-  background-image: -webkit-linear-gradient( -45deg, rgb(255,91,127) 0%, rgb(255,213,86) 100%);
-  background-image: -ms-linear-gradient( -45deg, rgb(255,91,127) 0%, rgb(255,213,86) 100%);
-}
+/* border-radius accepts values in the order of top-left, top-right, bottom-right, and bottom-left corners */
+
